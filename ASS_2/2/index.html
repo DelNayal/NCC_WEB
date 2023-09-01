@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+<title>Responsive Dashboard</title>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <div class="logo">
+
+      </div>
+      <ul>
+        <li>
+            <div class="img">
+                <img src="dashboard.png">Dashboard
+
+            </div>
+        </li>
+        <li><div class="img">
+             <img src="setting.png">Admin
+
+             </div>
+         </li>
+        <li><div class="img">
+            <img src="user.png">Candidiates
+
+        </div></li>
+        <li><div class="img">
+            <img src="user (1).png">Emplyers
+
+        </div></li>
+        <li>
+            <div class="img">
+                <img src="image.png">Dashboard
+
+            </div>
+        </li>
+        <li>
+            <div class="img">
+                <img src="news.png">Dashboard
+
+            </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="header">
+        <p>Dashboard</p>
+        <div class="right">
+            <i class="fa-regular fa-bell" style="color: #242b30;"></i>
+             <p>Consuelo Shanahan</p>
+             <i class="fa-solid fa-chevron-down" style="color: #2d3338;"></i>
+        </div>
+         </div>
+      <div class="main">
+        <div class="container">
+            <div class="column_a">
+                <div class="up">
+                    <p>Admins</p>
+                    <div class="img">
+                        <img src="setting.png">
+                    </div>
+                </div>
+                <p>100</p>
+            </div>
+            <div class="column_b">
+                <div class="up">
+                    <p>Staff</p>
+                    <div class="img">
+                        <img src="user.png">
+                    </div>
+                </div>
+                <p>100</p>
+            </div>
+            <div class="column_c">
+                <div class="up">
+                    <p>Adventure</p>
+                    <div class="img">
+                        <img src="image.png">
+                    </div>
+                </div>
+                <p>1500</p>
+            </div>
+            <div class="column_d">
+                <div class="up">
+                    <p>Total Connected</p>
+                    <div class="img">
+                        <img src="setting.png">
+                    </div>
+                </div>
+                <p>100</p>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const menubtn = document.querySelector('.menu')
+menu = document.querySelector('.sidebar ul')
+up = document.querySelector('.up')
+
+menubtn.onclick = function() {
+  if (!menu.classList.contains('open')) {
+    menu.classList.add('open')
+    menubtn.style.transform = 'rotate(180deg)'
+    menubtn.classList.remove('uil-bars')
+    menubtn.classList.add('uil-times')
+  } else {
+    menu.classList.remove('open')
+    menubtn.style.transform = 'rotate(0deg)'
+    menubtn.classList.add('uil-bars')
+    menubtn.classList.remove('uil-times')
+  }
+}
+
+  </script>
+</body>
+</html>

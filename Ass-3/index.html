@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASS-3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="tab" data-tab="alert">Alert Box</a>
+      <a href="#" class="tab" data-tab="todo">Todo</a>
+      <a href="#" class="tab" data-tab="form">Form</a>
+    </nav>
+
+    <div class="content" id="alert-box">
+      <button id="open-dialog">Open dialog</button>
+      <div class="dialog" id="dialog" style="display: none">
+        <div class="dialog-content">
+          <h3>Payment successful</h3>
+          <p>
+            Your payment has been successfully submitted.We've sent<br />
+            you an email with all of the details of your order.
+          </p>
+          <button id="close-dialog">Got it, thank!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="todo">
+      <div class="container">
+        <div class="todo">
+          <h3>Todo App</h3>
+          <input type="text" id="searchInput" placeholder="Search todo" />
+          <ul id="taskList"></ul>
+          <input type="text" id="newTaskInput" placeholder="Enter new todo"/>
+          <div class="forbuttton" style="display: flex;">
+            <button id="addTaskButton">Add Todo</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="content" id="form">
+      <div class="form-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <p id="error-name" style="display: none;">Name is required!</p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" >
+            <p id="error-email"></p>
+          
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <p id="error-password"></p>
+          
+          </div>
+          <button id="submit" type="submit">Log In</button>
+      </form>
+  
+     </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

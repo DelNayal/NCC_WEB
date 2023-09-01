@@ -1,0 +1,108 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .backdropss {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.galeria {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  width: 100%; /* Adjust based on the number of images */
+}
+
+.galeria_img {
+
+  flex-shrink: 0;
+width: 100%;
+  height: auto;
+  transition: transform 1s ease-in-out;
+}
+img{
+    
+    width: 100%;
+}
+
+@keyframes scroll {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  37.5% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  62.5% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  87.5% {
+    transform: translateX(-300%);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="backdropss">
+        <h2>Backdrops</h2>
+        <div id="backdrops" class="galeria animax">
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/D7RQboI7kz43efcQBjccUCdE5d.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/tyj1BcKHBTSWgcKxzOCDG0ArnMc.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/vGB6eEfwujRoCAxb8b4QMvAQRXo.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/sA84P7xoTK6Lfjm4hqyfAI9Mt8W.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/ouneWbBHNhO00HdXKCiKTyxhha7.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/aGv1FheG7AjpMqUTSEWduSEM6H8.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/evMd70Lj46jhf3Ba42lDDQQsqi.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/lp7drv6kWozBl4jmirTlmDbFtC2.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+          <div class="galeria_img">
+            <img itemprop="image" src="https://image.tmdb.org/t/p/w300/ayW4GBiZ8lMaWWp01ZibJ3x9Fop.jpg" alt="Cold Blooded Intern (2023)">
+          </div>
+        </div>
+      </div>
+      <script>
+        const galeria = document.querySelector('.galeria');
+
+galeria.addEventListener('mouseenter', () => {
+    galeria.style.animationPlayState = 'paused';
+});
+
+galeria.addEventListener('mouseleave', () => {
+    galeria.style.animationPlayState = 'running';
+});
+
+      </script>
+</body>
+</html>
