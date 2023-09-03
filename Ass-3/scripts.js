@@ -42,8 +42,8 @@ function addTask() {
     <span>${taskText}</span>
     <img src="delete.png" width="20px" height="20px" class="deleteButton"></img>
   `;
-
-  taskList.appendChild(li);
+  
+  taskList.prepend(li);
   newTaskInput.value = "";
 
   li.querySelector(".deleteButton").addEventListener("click", () => {
